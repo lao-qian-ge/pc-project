@@ -54,13 +54,9 @@
       <div class="section2 clearfix">
         <div class="floor floor-1 fl">
           <div class="home-hot-bd">
-            <router-link to="/luohu/4046.html" class="link ellipsis-2"
-              >上海落户口的条件最新规定，6类人落户条件查询细则</router-link
-            >
+            <router-link to="/luohu/4046.html" class="link ellipsis-2">上海落户口的条件最新规定，6类人落户条件查询细则</router-link>
 
-            <router-link to="/news " class="item ellipsis font-light"
-              >2023上海认可留学落户的大学名单，世界Top50、100院校直接落户！</router-link
-            >
+            <router-link to="/news " class="item ellipsis font-light">2023上海认可留学落户的大学名单，世界Top50、100院校直接落户！</router-link>
           </div>
           <div class="area-1">
             <div class="tit">
@@ -79,17 +75,14 @@
         <div class="floor floor-2 fl">
           <div class="tit clearfix">
             <p class="name fl">上海落户</p>
-            <router-link to="/luohu" class="more fr font-light"
-              >查看更多</router-link
-            >
+            <router-link to="/luohu" class="more fr font-light">查看更多</router-link>
           </div>
           <div class="content font-light">
             <div class="content-top clearfix">
               <router-link to="/luohu/4046.html" class="item">
                 <div class="imgs">
                   <img
-                    src="http://img.vgxf.com/cmsfiles/2022/12/21/16715907308701671590730870.png?x-oss-process=image%2Fwatermark%2Ctext_d3d3LnZneGYuY29t%2Cfill_1%2Crotate_315%2Corder_0%2Ct_10%2Cy_1%2Csize_22%2Ctype_ZmFuZ3poZW5naGVpdGk"
-                  />
+                    src="http://img.vgxf.com/cmsfiles/2022/12/21/16715907308701671590730870.png?x-oss-process=image%2Fwatermark%2Ctext_d3d3LnZneGYuY29t%2Cfill_1%2Crotate_315%2Corder_0%2Ct_10%2Cy_1%2Csize_22%2Ctype_ZmFuZ3poZW5naGVpdGk" />
                 </div>
                 <div class="news-tit">
                   <p class="ellipsis-2">
@@ -100,142 +93,8 @@
             </div>
             <div class="content-bottom">
               <div class="item clearfix">
-                <router-link to="/luohu/5048.html" class="fl news-tit ellipsis"
-                  >上海落户承认的中级职称，2023年落户上海考这些职称！</router-link
-                >
+                <router-link to="/luohu/5048.html" class="fl news-tit ellipsis">上海落户承认的中级职称，2023年落户上海考这些职称！</router-link>
                 <div class="fr time">04-22</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="floor floor-2 fl">
-          <div class="tit clearfix">
-            <p class="name fl">上海居转户</p>
-            <router-link to="/jifen" class="more fr font-light"
-              >查看更多</router-link
-            >
-          </div>
-          <div class="content font-light">
-            <div class="content-top clearfix">
-              <router-link to="/jifen/4052.html" class="item">
-                <div class="imgs">
-                  <img
-                    src="http://img.vgxf.com/cmsfiles/2022/12/21/16715911074991671591107500.png?x-oss-process=image%2Fwatermark%2Ctext_d3d3LnZneGYuY29t%2Cfill_1%2Crotate_315%2Corder_0%2Ct_10%2Cy_1%2Csize_22%2Ctype_ZmFuZ3poZW5naGVpdGk"
-                  />
-                </div>
-                <div class="news-tit">
-                  <p class="ellipsis-2">
-                    上海居转户落户政策最新进阶版落户条件，6类人直接落户！
-                  </p>
-                </div>
-              </router-link>
-            </div>
-            <div class="content-bottom">
-              <div class="item clearfix">
-                <router-link to="/jifen/5033.html" class="fl news-tit ellipsis"
-                  >上海居转户中级职称社保要求，上海居转户政策2023！</router-link
-                >
-                <div class="fr time">04-18</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="floor floor-2 fl">
-          <div class="tit clearfix">
-            <p class="name fl">人才引进落户</p>
-            <router-link to="/juzhuzheng" class="more fr font-light"
-              >查看更多</router-link
-            >
-          </div>
-          <div class="content font-light">
-            <div class="content-top clearfix">
-              <router-link to="/juzhuzheng/4042.html" class="item">
-                <div class="imgs">
-                  <img
-                    src="http://img.vgxf.com/cmsfiles/2022/12/21/16715913580381671591358039.png?x-oss-process=image%2Fwatermark%2Ctext_d3d3LnZneGYuY29t%2Cfill_1%2Crotate_315%2Corder_0%2Ct_10%2Cy_1%2Csize_22%2Ctype_ZmFuZ3poZW5naGVpdGk"
-                  />
-                </div>
-                <div class="news-tit">
-                  <p class="ellipsis-2">
-                    上海人才引进落户政策最新版，这8类人才可直接落户！
-                  </p>
-                </div>
-              </router-link>
-            </div>
-            <div class="content-bottom">
-              <div class="item clearfix">
-                <router-link
-                  to="/juzhuzheng/5025.html"
-                  class="fl news-tit ellipsis"
-                  >上海人才引进落户配偶随迁落户条件，不用等10年！</router-link
-                >
-                <div class="fr time">04-16</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="floor floor-2 fl">
-          <div class="tit clearfix">
-            <p class="name fl">留学生落户</p>
-            <router-link to="/liuxuesheng" class="more fr font-light"
-              >查看更多</router-link
-            >
-          </div>
-          <div class="content font-light">
-            <div class="content-top clearfix">
-              <router-link to="/liuxuesheng/4065.html" class="item">
-                <div class="imgs">
-                  <img
-                    src="http://img.vgxf.com/cmsfiles/2022/06/17/16554305691101655430569110.png?x-oss-process=image%2Fwatermark%2Ctext_d3d3LnZneGYuY29t%2Cfill_1%2Crotate_315%2Corder_0%2Ct_10%2Cy_1%2Csize_22%2Ctype_ZmFuZ3poZW5naGVpdGk"
-                  />
-                </div>
-                <div class="news-tit">
-                  <p class="ellipsis-2">
-                    官方认定了！上海留学生落户前50、前100大学名单出炉，有你学校吗？
-                  </p>
-                </div>
-              </router-link>
-            </div>
-            <div class="content-bottom">
-              <div class="item clearfix">
-                <router-link
-                  to="/liuxuesheng/5034.html"
-                  class="fl news-tit ellipsis"
-                  >2023年留学生落户上海社保基数，官方已明确！</router-link
-                >
-                <div class="fr time">04-18</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="floor floor-2 fl">
-          <div class="tit clearfix">
-            <p class="name fl">应届生落户</p>
-            <router-link to="/" class="more fr font-light"
-              >查看更多</router-link
-            >
-          </div>
-          <div class="content font-light">
-            <div class="content-top clearfix">
-              <router-link to="/" class="item">
-                <div class="imgs">
-                  <img
-                    src="http://img.vgxf.com/cmsfiles/2022/12/21/16715915127421671591512743.png?x-oss-process=image%2Fwatermark%2Ctext_d3d3LnZneGYuY29t%2Cfill_1%2Crotate_315%2Corder_0%2Ct_10%2Cy_1%2Csize_22%2Ctype_ZmFuZ3poZW5naGVpdGk"
-                  />
-                </div>
-                <div class="news-tit">
-                  <p class="ellipsis-2">
-                    重磅发布！上海应届生落户新政实施细则（政策原文），速看！
-                  </p>
-                </div>
-              </router-link>
-            </div>
-            <div class="content-bottom">
-              <div class="item clearfix">
-                <router-link to="/" class="fl news-tit ellipsis"
-                  >上海应届生落户72分计算器，上海积分落户2023年新政策！</router-link
-                >
-                <div class="fr time">04-13</div>
               </div>
             </div>
           </div>
@@ -244,15 +103,12 @@
       <div class="section3">
         <div class="tit clearfix">
           <p class="name fl">资讯动态</p>
-          <router-link to="/news" class="more fr font-light"
-            >查看更多</router-link
-          >
+          <router-link to="/news" class="more fr font-light">查看更多</router-link>
         </div>
         <div class="content font-light clearfix">
           <router-link to="/news " class="link">
             <img
-              src="http://img.vgxf.com/cmsfiles/2023/04/23/16822434919161682243491916.png?x-oss-process=image%2Fwatermark%2Ctext_d3d3LnZneGYuY29t%2Cfill_1%2Crotate_315%2Corder_0%2Ct_10%2Cy_1%2Csize_22%2Ctype_ZmFuZ3poZW5naGVpdGk"
-            />
+              src="http://img.vgxf.com/cmsfiles/2023/04/23/16822434919161682243491916.png?x-oss-process=image%2Fwatermark%2Ctext_d3d3LnZneGYuY29t%2Cfill_1%2Crotate_315%2Corder_0%2Ct_10%2Cy_1%2Csize_22%2Ctype_ZmFuZ3poZW5naGVpdGk" />
             <div class="news-tit">
               <p class="ellipsis">
                 2023上海认可留学落户的大学名单，世界Top50、100院校直接落户！
@@ -265,6 +121,35 @@
   </div>
 </template>
 <script setup lang="ts">
+import { reactive, onMounted, toRefs } from 'vue'
+import { getNewsInfo } from '@/service/api/index'
+
+const state: {
+  newsList: Array<any>,
+
+} = reactive({
+  newsList: [],
+
+})
+const { newsList } = toRefs(state)
+
+onMounted(() => {
+  getNewsFn()
+})
+
+//获取资讯
+async function getNewsFn() {
+  let data = {
+    infoType: '',
+    infoContent: "",
+    pageSize: 10,
+    pageNo: 1,
+  }
+  const res = await getNewsInfo(data)
+  if (res.code == 200) {
+    state.newsList = res.result.records
+  }
+}
 </script>
 <style lang="scss" scoped>
 .font-light {

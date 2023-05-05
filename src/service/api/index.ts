@@ -7,27 +7,26 @@ import * as T from './types'
 //     }
 // }
 export function getBanner() {
-    return request.get(
-        '/mq/mqbiz/mqHomepageImage/outside/list');
+    return request.get('/api/mq/mqbiz/mqHomepageImage/outside/list');
 }
 export function getNewsType() {
-    return request.get('/mq/mqbiz/mqInfoType/outside/list');
+    return request.get('/api/mq/mqbiz/mqInfoType/outside/list');
 }
 export function getNewsInfo(data: object) {
-    return request.get('/mq/mqbiz/mqInfo/outside/list', data);
+    return request.get('/api/mq/mqbiz/mqInfo/outside/list', data);
 }
 export function mqCompanyAddress() {
-    return request.get('/mq/mqbiz/mqCompanyAddress/outside/list');
+    return request.get('/api/mq/mqbiz/mqCompanyAddress/outside/list');
 }
 export function queryById(data: object) {
-    return request.get('/mq/mqbiz/mqInfo/outside/queryById', data);
+    return request.get('/api/mq/mqbiz/mqInfo/outside/queryById', data);
 }
 export function addInfo(data: object) {
-    return request.post('/mq/mqbiz/mqSettlementEvaluation/outside/add', data);
+    return request.post('/api/mq/mqbiz/mqSettlementEvaluation/outside/add', data);
 }
 export function addNewContact(data: object) {
-    return request.post('/mq/mqbiz/mqNewContact/outside/addNewContact', data);
+    return request.post('/api/mq/mqbiz/mqNewContact/outside/addNewContact', data);
 }
 export function addmqMembers(data: object) {
-    return request.post('/mq/mqbiz/mqMembers/outside/add', data);
+    return request.post('/api/mq/mqbiz/mqMembers/outside/add', data);
 }

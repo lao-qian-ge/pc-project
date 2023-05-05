@@ -2,19 +2,16 @@
     <div class="banner">
         <div class="content-box">
             <div class="area-1 clearfix">
-                <router-link to="/yingjiesheng" class="item">应届生落户</router-link>
-                <router-link to="/rencai" class="item">上海人才引进</router-link>
-                <router-link to="/juzhuanhu" class="item">上海居转户</router-link>
-                <router-link to="/luohu" class="item">上海落户政策</router-link>
-                <router-link to="/zice" class="item">落户条件自测</router-link>
-                <router-link to="liuxuesheng" class="item">留学生落户</router-link>
+                <span class="item" v-for="item in menuTab" :key="item.id" @click="handleChange(item.typeSort)">
+                    {{ item.typeName }}
+                </span>
             </div>
             <div class="area-2 clearfix search">
                 <div class="clearfix fl">
                     <p class="iconfont icon-sousuo fl"></p>
-                    <input class="fl font-light" type="text" placeholder="请输入关键词" />
+                    <input class="fl font-light" v-model="searchData" type="text" placeholder="请输入关键词" />
                 </div>
-                <button class="fr" type="submit">立即搜索</button>
+                <button class="fr" type="submit" @click="search">立即搜索</button>
             </div>
             <div class="area-3 clearfix">
                 <div class="fl tit">热搜：</div>
@@ -30,6 +27,46 @@
         </div>
     </div>
 </template>
+<script setup lang="ts">
+import { reactive, onMounted, toRefs } from 'vue'
+import { getNewsType } from '@/service/api/index'
+
+const state: {
+    menuTab: Array<any>,
+    searchData: string
+} = reactive({
+    menuTab: [],
+    searchData: ''
+})
+const { menuTab, searchData } = toRefs(state)
+
+onMounted(() => {
+    getTabsListFn()
+})
+
+//搜索
+function search() {
+    const data = {
+        infoContent: state.searchData,
+        infoType: '',
+        pageSize: 10,
+        pageNo: 1,
+    }
+}
+
+//获取menu
+async function getTabsListFn() {
+    const res = await getNewsType()
+    if (res.code == 200) {
+        state.menuTab = res.result
+    }
+}
+
+//切换menu
+function handleChange() {
+
+}
+</script>
 <style scoped>
 .banner {
     height: 300px;
@@ -60,7 +97,8 @@
     font-size: 16px;
     margin-right: 20px;
     -webkit-transition: background .3s ease;
-    transition: background .3s ease
+    transition: background .3s ease;
+    cursor: pointer;
 }
 
 .banner .area-1 .item:last-child {
