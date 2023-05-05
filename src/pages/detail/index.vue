@@ -6,9 +6,7 @@
 
         <a href="/news">资讯动态</a> &gt;
 
-        <a href="/news/5041.html"
-          >2023上海五年一户政策迎来大变化！上海家长必看！</a
-        >
+        <a href="/news/5041.html">2023上海五年一户政策迎来大变化！上海家长必看！</a>
       </div>
       <div class="pb50">
         <div class="area-fl">
@@ -34,21 +32,14 @@
             <!-- 详情页按钮 -->
             <div class="seo-btn-box seo-btn-box-one">
               <div class="seo-btn-item">
-                <a
-                  href="/zice"
-                  class="seo-btn-item-bd seo-btn-item-first"
-                  target="_blank"
-                  >我已了解，申请上海落户</a
-                >
+                <a href="/zice" class="seo-btn-item-bd seo-btn-item-first" target="_blank">我已了解，申请上海落户</a>
               </div>
               <div class="seo-btn-item">
-                <div
-                  class="
+                <div class="
                     seo-btn-item-bd seo-btn-item-second
                     clickTalk
                     clickLine
-                  "
-                >
+                  ">
                   还不清楚，在线咨询
                 </div>
               </div>
@@ -64,15 +55,11 @@
             <div class="tit">资讯动态相关推荐</div>
             <div class="content font-light clearfix">
               <div class="link">
-                <a href="/luohu/4542.html" class="news-tit ellipsis fl"
-                  >上海落户新政策2022重大调整，社保补缴政策再出新规！（官方原文）</a
-                >
+                <a href="/luohu/4542.html" class="news-tit ellipsis fl">上海落户新政策2022重大调整，社保补缴政策再出新规！（官方原文）</a>
                 <p class="time fr">11-07</p>
               </div>
               <div class="link">
-                <a href="/news/4525.html" class="news-tit ellipsis fl"
-                  >上海中级职称落户社保基数要求，2022上海落户职称目录（最新版）</a
-                >
+                <a href="/news/4525.html" class="news-tit ellipsis fl">上海中级职称落户社保基数要求，2022上海落户职称目录（最新版）</a>
                 <p class="time fr">11-02</p>
               </div>
             </div>
@@ -85,6 +72,34 @@
 </template>
 <script lang="ts" setup>
 import RightItem from '@/components/right/Index.vue'
+import { reactive, toRefs, ref, watch } from 'vue'
+import { useRoute } from 'vue-router'
+import { queryById } from '@/service/api/index'
+const route = useRoute()
+const userData = ref()
+
+let state: { detail: object } = reactive({ // 响应式数据
+  detail: {}
+})
+const { detail } = toRefs(state);
+
+watch(
+  () => route.params.id,
+  async newId => {
+    userData.value = await fetchUser(newId)
+  }
+)
+
+function getDetail(id: number) {
+  queryById({
+    id: id,
+  }).then(res => {
+    if (res.code == 200) {
+      state.detail = res.result
+    }
+  })
+}
+
 </script>
 <style>
 .font-light {
@@ -276,7 +291,7 @@ import RightItem from '@/components/right/Index.vue'
   font-size: 0;
 }
 
-.list-pages .pagesnew > div {
+.list-pages .pagesnew>div {
   display: inline-block;
   text-align: center;
   overflow: hidden;
@@ -285,12 +300,12 @@ import RightItem from '@/components/right/Index.vue'
   cursor: pointer;
 }
 
-.list-pages .pagesnew > div .zjtrain-iconfont {
+.list-pages .pagesnew>div .zjtrain-iconfont {
   font-size: 10px;
 }
 
-.list-pages .pagesnew > div a,
-.list-pages .pagesnew > div span {
+.list-pages .pagesnew>div a,
+.list-pages .pagesnew>div span {
   border: 1px solid #e2e2e2;
   color: #333;
   font-size: 14px;
@@ -304,16 +319,16 @@ import RightItem from '@/components/right/Index.vue'
   transition: all 0.3s ease;
 }
 
-.list-pages .pagesnew > div.active a,
-.list-pages .pagesnew > div.active span,
-.list-pages .pagesnew > div:hover a {
+.list-pages .pagesnew>div.active a,
+.list-pages .pagesnew>div.active span,
+.list-pages .pagesnew>div:hover a {
   border-color: #fa6400;
   background: #fa6400;
   color: #fff;
 }
 
-.list-pages .pagesnew > div a.disabled,
-.list-pages .pagesnew > div span.disabled {
+.list-pages .pagesnew>div a.disabled,
+.list-pages .pagesnew>div span.disabled {
   background: #fff;
   border: 1px solid #e2e2e2;
   color: #999;

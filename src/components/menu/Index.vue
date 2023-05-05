@@ -15,14 +15,17 @@
         <span class="fl link" v-for="item in menuTab" :key="item.id" @click="handleChange(item.typeSort)">
           {{ item.typeName }}
         </span>
-        <span class="fl link">资讯动态</span>
+        <router-link class="fl link" to="/news">资讯动态</router-link>
       </div>
     </div>
   </div>
 </template>
 <script setup lang="ts">
 import { reactive, onMounted, toRefs } from 'vue'
+import { useRouter } from "vue-router";
 import { getNewsType } from '@/service/api/index'
+
+const router = useRouter()
 
 const state: {
   menuTab: Array<any>
@@ -30,6 +33,7 @@ const state: {
   menuTab: []
 })
 const { menuTab } = toRefs(state)
+
 
 onMounted(() => {
   getTabsListFn()
@@ -44,8 +48,10 @@ async function getTabsListFn() {
 }
 
 //切换menu
-function handleChange() {
-
+function handleChange(id: number) {
+  router.push({
+    path: '/infolist/' + id
+  })
 }
 </script>
 

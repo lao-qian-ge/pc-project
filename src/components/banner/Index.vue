@@ -63,8 +63,10 @@ async function getTabsListFn() {
 }
 
 //切换menu
-function handleChange() {
-
+function handleChange(id) {
+    this.$router.push({
+        path: '/infolist/' + id
+    })
 }
 </script>
 <style scoped>
